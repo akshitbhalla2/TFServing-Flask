@@ -1,0 +1,9 @@
+# To see list of docker instances
+sudo docker ps
+
+# Setup TensorFlow Serving (creating instance)
+sudo docker run -p 8501:8501 --name=pets -v "/home/akshitbhalla/PycharmProjects/TFServing&Flask/pets/:/models/pets/1" -e MODEL_NAME=pets tensorflow/serving 
+
+# The above can be closed (ctrl+C) to view created docker instance (tensorflow/serving)
+sudo docker ps
+
